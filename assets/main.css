@@ -1,8 +1,12 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: URL('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png');
+}
 header {
-  background: URL('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center;
+  background: URL('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
 
   height: 100vh;
   width: 100%;
@@ -14,11 +18,48 @@ header {
 #event{
   color: white;
   background: rgba(0,0,0,.4);
+  text-align: center;
+  width:100%;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .purpose {
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
   text-transform: uppercase;
-  font-family: 'Libre Baskerville', serif;
+}
+
+.headline {
+  color: rgb(210, 186, 135);
+  font-size: 7rem;
+  letter-spacing: 0rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.main-title {
+  padding: 1rem;
+}
+
+hr {
+  width: 13rem;
+  margin-top: -0.3rem;
+}
+@media (min-width:720px) {
+  #event {
+    width:45%;
+  }
+}
+
+#locations {
+  width:100%;
+  height: 50vh;
+
+    
+}
+
+#loc-title {
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  margin-top: 4vh;
+    
 }
