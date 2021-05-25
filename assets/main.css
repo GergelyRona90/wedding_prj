@@ -43,11 +43,7 @@ hr {
   width: 13rem;
   margin-top: -0.3rem;
 }
-@media (min-width:720px) {
-  #event {
-    width:45%;
-  }
-}
+
 
 #locations {
   width:100%;
