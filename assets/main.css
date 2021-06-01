@@ -1,61 +1,267 @@
 * {
   box-sizing: border-box;
 }
+
+
 body {
   font-family: 'Libre Baskerville', serif;
   background: URL('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png');
+  line-height: 1.8rem;
+  text-align: center;
+  min-height: calc(100vh - 8vh);
 }
-header {
-  background: URL('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
 
+h1 {
+  color: #d2ba87;
+}
+h1,h2 {
+  font-size: 3rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  padding: 1rem;
+  line-height: 1.4;
+}
+
+
+@media (min-width:768px){
+  h1,h2 {
+    padding: 0rem;
+  }
+  @media (min-width:768px) {
+    
+    h2 {
+      margin-top:2rem;
+    }
+  }
+  
+  
+}
+h3 {
+  font-size: 1.2rem;
+}
+
+/*Header*/
+
+header {
+  background: URL('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 #event{
   color: white;
   background: rgba(0,0,0,.4);
   text-align: center;
   width:100%;
-  font-size: 1.2rem;
   letter-spacing: 0.2rem;
 }
 
-.purpose {
-  text-transform: uppercase;
-}
-
-.headline {
-  color: rgb(210, 186, 135);
-  font-size: 7rem;
-  letter-spacing: 0rem;
-  font-family: 'Great Vibes', cursive;
-}
 
 .main-title {
   padding: 1rem;
 }
 
-hr {
+.event-hr {
   width: 13rem;
-  margin-top: -0.3rem;
+  margin-top: -0.75rem;
 }
 
+@media (min-width:768px){
+  #event {
+    width: 50%;
+  }
+  
+  .headline {
+    font-size: 7rem;
+  }
+  
+}
+
+/*Location*/
+img {
+  width: 7.5rem;
+  margin: 1rem
+}
 
 #locations {
-  width:100%;
-  height: 50vh;
 
-    
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem;
 }
+
 
 #loc-title {
   text-align: center;
   font-family: 'Great Vibes', cursive;
   font-size: 3rem;
-  margin-top: 4vh;
+  margin-bottom: -12vh;
+}
+
+.loc-caption {
+  font-family: 'Libre Baskerville', serif;  
+  font-size: 1.5rem;
+  padding: 1.3rem;
+  font-weight: 800;
+}
+
+.loc-hr {
+  margin-top: 20px;
+  width: 50%;
+  border: 2px solid black;
     
 }
+@media (min-width:768px) {
+  
+  #locations {
+    display: inline-block;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  
+  .loc-hr {
+    display:none; 
+  }
+  .location {
+    float: left;
+    width: 33%;
+  }
+  .location:after {
+    content: "";
+    clear: left;
+  }
+  
+}
+
+  
+/*Program*/
+
+.program, .QA {
+  background-color: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  line-height: 2rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+
+.quote {
+  font-style: italic;
+}
+
+@media (min-width:768px) {
+  
+  .program {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .quote, ul {
+    
+    margin: 0 30vw;
+  }
+  
+}
+
+.gift {
+  color: #444349;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.gift  p {
+  margin: 0.5rem;
+}
+
+@media (min-width:768px) {
+  
+  .gift h2 {
+  margin-bottom: 1rem;
+}
+}
+
+
+/*Question section*/
+
+.QA-h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.QA {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+}
+
+.question {
+  font-weight: 600;
+  
+}
+.question, .answer {
+  text-align: left;
+  padding: 0.5rem;
+  font-family: 'Muli', sans-serif;
+}
+
+.QA-sections::after {
+    content: "";
+    display: block;
+    height: .2rem ;
+    width: 50%;
+    margin: 1.5rem auto;
+    background-color: #d2ba87;
+}
+
+@media (min-width:768px) {
+  
+  
+  .QA-sections {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    max-width: 30%;
+    margin: 2rem 1rem;
+  }
+  
+  .QA-h3 {
+    text-align: left;
+  }
+.QA-sections::after {
+    display: none;
+  }
+}
+
+.contact {
+  color:#444349;
+}
+
+.contact-p {
+  margin: 1.4rem;
+  margin-top: -0.5rem
+}
+
+footer {
+  background-color: hsla(100,0%,0%,.6);  
+  color: white;
+  font-size: .75rem;
+  padding: 0 1.5rem;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
